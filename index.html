@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> DND NPC Generator </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Generates characters for a DND adventure.">
+	<meta name="author" content="Anton Medina">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<script src="script.js">
+	</script>
+
+	<table>
+	
+		<h1> DND NPC Generator </h1>
+		<tr>
+			<td>
+				<button onclick="changeAllText()" class="rollButton">Сгенерировать всё</button>
+			</td>
+			<td>
+				<button onclick="copyCharacterText()" class="clipboardButton">Скопировать в буфер обмена</button>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<fieldset class="generation-item">
+					<legend>Имя</legend>
+					<button onclick="changeNameText('name')"></button>
+					<div>
+					<p id="name">Name</p>
+					</div>
+				</fieldset>
+			</td>
+		
+			<td>
+				<fieldset class="generation-item">
+					<legend>Фамилия</legend>
+					<button onclick="changeNameText('sur')"></button>
+					<div>
+					<p id="sur">Surname</p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<fieldset class="generation-item">
+					<legend>Раса</legend>
+					<button onclick="changeRaceText()"></button>
+					<div>
+					<p id="race">Race</p>
+					</div>
+				</div>
+			</td>
+			
+			<td>
+				<fieldset class="generation-item">
+					<legend>Профессия</legend>
+					<button onclick="changeProfessionText()"></button>
+					<div>
+					<p id="prof">Profession</p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<fieldset class="generation-item">
+					<legend>Класс</legend>
+					<button onclick="changeClassText()"></button>
+					<div>
+					<p id="class">Class</p>
+					</div>
+				</div>
+			</td>
+			
+			<td>
+				<fieldset class="generation-item">
+					<legend>Мировоззрение</legend>
+					<button onclick="changeAlignText()"></button>
+					<div>
+					<p id="align">Alignment</p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<fieldset class="generation-item">
+					<legend>Качества</legend>
+					<button onclick="changePersonalityText()"></button>
+					<div>
+					<p id="personality">Personality<br><br><br><br><br></p>
+					</div>
+				</div>
+			</td>
+			
+			<td>
+				<fieldset class="generation-item">
+					<legend>Склонности</legend>
+					<button onclick="changeLikesText()"></button>
+					<div>
+					<p id="likes">Likes<br><br><br><br><br></p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td>
+				<fieldset class="generation-item">
+					<legend>Инвентарь</legend>
+					<button onclick="changeInventoryText()"></button>
+					<div>
+					<p id="bag">Items<br><br><br><br><br></p>
+					</div>
+				</div>
+			</td>
+			
+			<td>
+				<fieldset class="generation-item">
+					<legend>Золото</legend>
+					<button onclick="changeMoneyText()"></button>
+					<div>
+					<p id="money">Money<br><br><br><br><br></p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		
+	</table>
+	
+	<p>Raw Text</p>
+	<textarea readonly id="copyBox"> NPC </textarea>
+		
+</body>
+		
+		
+</html>
